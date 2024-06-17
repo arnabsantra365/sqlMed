@@ -25,6 +25,7 @@ It features dynamic forms based on user interaction and demonstrates proficiency
 2. npm install
 3. npm run dev for both frontend and backend
 
+Change import.meta.env.VITE_BACKEND_URL to http://localhost:3000 in the frontend part
 Navigate to the Application: Open http://localhost:3000 in your web browser.
 Select a Form: Click on "Form A" or "Form B" to open the respective form.
 Fill in the Form: Enter the details and submit the form.
