@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require("cors");
 const con = require('./connection')
 const syncData = require('./dropboxSync');
-
+const api = process.env.api
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -22,7 +22,7 @@ con.connect(err => {
 
  
 
-  app.post('/api/form', (req, res) => {
+  app.post(`${api}/form`, (req, res) => {
     const {  name, countryCode, phoneNumber } = req.body;
     
     console.log(name,countryCode,phoneNumber);
@@ -40,7 +40,7 @@ con.connect(err => {
     });
   });
 
-  app.get('/api/sync', async (req, res) => {
+  app.get(`${api}/sync`, async (req, res) => {
     try {
       await syncData();
       res.status(200).json({ message: 'Data synchronized with Dropbox successfully' });

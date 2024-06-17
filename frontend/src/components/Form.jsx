@@ -1,6 +1,6 @@
 import  { useState } from 'react';
 import axios from 'axios';
-
+import { api } from '../../services/helper';
 const countries = [
   { code: '+1', name: 'USA' },
   { code: '+91', name: 'India' },
@@ -49,7 +49,7 @@ const Form = () => {
       console.log('Form submitted:', { name, countryCode, phoneNumber });
 
           // Send form data to backend
-    axios.post(`/api/form`, {  name, countryCode, phoneNumber })
+    axios.post(`${api}/sync`, {  name, countryCode, phoneNumber })
     .then(response => {
       console.log(response.data);
       // Clear form fields after successful submission
