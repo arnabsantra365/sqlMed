@@ -53,9 +53,9 @@ const Form = () => {
     .then(response => {
       console.log(response.data);
       // Clear form fields after successful submission
-      setName('');
-      setCountryCode('');
-      setPhoneNumber('');
+      // setName('');
+      // setCountryCode('');
+      // setPhoneNumber('');
     })
     .catch(error => {
       console.error('Error submitting form:', error);
