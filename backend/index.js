@@ -19,7 +19,9 @@ con.connect(err => {
     })
   });
 
-
+  app.get('*', function(req, res){
+    res.sendFile(__dirname + './frontend/index.html');
+  });
  
 
   app.post(`/api/form`, (req, res) => {
