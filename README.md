@@ -31,5 +31,5 @@ Fill in the Form: Enter the details and submit the form.
 Sync Data: Click the "Sync" button to synchronize the data with Dropbox.
 
 #The online excel sheet link is :- https://www.dropbox.com/scl/fi/e2b6p9qez4ilvrbd9oosr/formData.xlsx?cloud_editor=excel&dl=0&rlkey=6zum5bvkgt9iw130b0tybbatc
-#The site is hosted at:- https://delightful-liger-3725d9.netlify.app/
+#The site is hosted at:- https://delightful-liger-3725d9.netlify.app/ but there is a problem in hosting that so to get the full working please install and use locally.
 If on clicking refresh the excel file doesnot update then the rate limit is exhausted in dropbox please try after sometime.
