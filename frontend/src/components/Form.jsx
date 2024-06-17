@@ -49,7 +49,7 @@ const Form = () => {
       console.log('Form submitted:', { name, countryCode, phoneNumber });
 
           // Send form data to backend
-    await axios.post(`${URL}/api/form`, {  name, countryCode, phoneNumber })
+    await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/form`, {  name, countryCode, phoneNumber })
     .then(response => {
       console.log(response.data);
       // Clear form fields after successful submission

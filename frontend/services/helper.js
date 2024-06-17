@@ -1,1 +1,1 @@
-export const URL = "https://sqlmed.onrender.com" ;
+export const URL = "http://localhost:3000" ;

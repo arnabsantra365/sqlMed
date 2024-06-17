@@ -26,7 +26,7 @@ const uploadFileToDropbox = async (buffer) => {
           if (error.status === 429) {
             attempt++;
             const waitTime = Math.pow(2, attempt) * 1000; // exponential backoff
-            alert(`Rate limit hit. Retrying in ${waitTime / 1000} seconds...`);
+            console.log(`Rate limit hit. Retrying in ${waitTime / 1000} seconds...`);
             await new Promise(resolve => setTimeout(resolve, waitTime));
           } else {
             console.error('Error uploading file:', error);
@@ -34,7 +34,7 @@ const uploadFileToDropbox = async (buffer) => {
           }
         }
       }
-      alert('Max retries reached. Could not upload the file .Please try after sometime');
+      console.log('Max retries reached. Could not upload the file .Please try after sometime');
 };
 
 const syncData = async () => {

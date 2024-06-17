@@ -4,7 +4,7 @@ import { URL } from '../../services/helper';
 const SyncButton = () => {
   const handleSync = async () => {
     try {
-      const response = await axios.get(`${URL}/api/sync`);
+      const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/sync`);
       alert(response.data.message || 'Data synchronized successfully');
     } catch (error) {
       console.error('Error syncing data:', error);
