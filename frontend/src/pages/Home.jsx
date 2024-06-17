@@ -1,6 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import Button from '../components/Button'
+import SyncButton from '../components/SyncButton';
 
 const Home = () => {
    
@@ -12,6 +13,7 @@ const Home = () => {
       <Link  to={`form/B`} className="formb cursor-pointer text-white">
         <Button data={'B'}  />
       </Link>
+      <SyncButton />
     </div>
   )
 }
