@@ -30,4 +30,6 @@ Select a Form: Click on "Form A" or "Form B" to open the respective form.
 Fill in the Form: Enter the details and submit the form.
 Sync Data: Click the "Sync" button to synchronize the data with Dropbox.
 
-The online excel sheet link is :- https://www.dropbox.com/scl/fi/e2b6p9qez4ilvrbd9oosr/formData.xlsx?rlkey=swi369f069tx2mgvbwegdc9ds&st=bz40wpov&dl=0
+#The online excel sheet link is :- https://www.dropbox.com/scl/fi/e2b6p9qez4ilvrbd9oosr/formData.xlsx?rlkey=swi369f069tx2mgvbwegdc9ds&st=bz40wpov&dl=0
+#The site is hosted at:- https://delightful-liger-3725d9.netlify.app/
+If on clicking refresh the excel file doesnot update then the rate limit is exhausted in dropbox please try after sometime.
